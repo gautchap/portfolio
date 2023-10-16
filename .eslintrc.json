@@ -19,6 +19,7 @@
         "sourceType": "module",
         "project": "tsconfig.json"
     },
+    "ignorePatterns": ["src/components/ui/*"],
     "plugins": ["react", "react-refresh", "react-hooks", "@typescript-eslint", "github", "unicorn"],
     "rules": {
         "react-refresh/only-export-components": "warn",
