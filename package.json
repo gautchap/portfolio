@@ -20,7 +20,7 @@
         "@vercel/analytics": "latest",
         "class-variance-authority": "latest",
         "clsx": "latest",
-        "framer-motion": "^10.16.4",
+        "framer-motion": "latest",
         "next": "latest",
         "next-themes": "latest",
         "react": "latest",
