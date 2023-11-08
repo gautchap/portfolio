@@ -7,14 +7,15 @@ import AboutContent from "@/components/about-content";
 import HeroImage from "@/components/hero-image";
 import ProjectsContent from "@/components/projects-content";
 import ContactContent from "@/components/contact-content";
+import HeroContent from "@/components/hero-content";
 
 export default function Home() {
   return (
     <>
       <Stars className="absolute z-[-1] h-full w-full " />
       <main className="pb-16">
-        <HeroSection>
-          <HeroImage />
+        <HeroSection image={<HeroImage />}>
+          <HeroContent />
         </HeroSection>
         <AboutSection>
           <AboutContent />

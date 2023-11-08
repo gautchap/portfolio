@@ -5,13 +5,6 @@ import { motion, useInView } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { Barlow } from "next/font/google";
 
 const barlow = Barlow({
@@ -34,9 +27,10 @@ const cardVariants = {
 
 type HeroSectionProps = {
   children: ReactNode;
+  image: ReactNode;
 };
 
-export default function HeroSection({ children }: HeroSectionProps) {
+export default function HeroSection({ children, image }: HeroSectionProps) {
   const reference = useRef(null);
   const isInView = useInView(reference, { once: false });
   return (
@@ -91,7 +85,7 @@ export default function HeroSection({ children }: HeroSectionProps) {
             transition={{ duration: 0.5 }}
             className="col-span-4 place-self-center mt-4 lg:mt-0"
           >
-            {children}
+            {image}
           </motion.div>
         </div>
         <div className="md:place-self-center md:px-16 grid-cols-1">
@@ -101,16 +95,7 @@ export default function HeroSection({ children }: HeroSectionProps) {
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.5 }}
           >
-            <Card>
-              <CardHeader>
-                <CardTitle>&gt;_ Let&apos;s Connect</CardTitle>
-                <CardDescription>
-                  I&apos;m currently looking for new opportunities, my inbox is
-                  always open. Whether you have a question or just want to say
-                  hi, I&apos;ll try my best to get back to you!
-                </CardDescription>
-              </CardHeader>
-            </Card>
+            {children}
           </motion.div>
         </div>
       </div>
