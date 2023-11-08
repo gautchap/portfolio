@@ -1,5 +1,5 @@
 import Image from "next/image";
-import hero from "@/assets/hero-memoji.png";
+import hero from "@/assets/hero-memoji.webp";
 
 export default function HeroImage() {
   return (
