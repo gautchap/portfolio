@@ -16,6 +16,7 @@ import { toast } from "@/components/ui/use-toast";
 import { Input } from "@/components/ui/input";
 import { useForm } from "react-hook-form";
 import { ReloadIcon } from "@radix-ui/react-icons";
+import sendMail from "@/actions/send-mail";
 
 const formSchema = z.object({
   mail: z.string().email().min(1),
@@ -34,11 +35,9 @@ export function ContactForm() {
       subject: "",
     },
   });
-  async function onSubmit() {
-    const res = new Promise((resolve) => setTimeout(resolve, 2000));
-
+  async function onSubmit(values: FormValues) {
     try {
-      await res;
+      await sendMail(values);
       form.reset();
       toast({
         description: "✅ Your message has been sent.",
@@ -52,7 +51,7 @@ export function ContactForm() {
   }
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
         <FormField
           control={form.control}
           name="mail"
