@@ -42,7 +42,7 @@ export default function HeroSection({ children, image }: HeroSectionProps) {
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.5 }}
-            className="col-span-8 place-self-center text-center sm:text-left justify-self-center sm:justify-self-start"
+            className="col-span-8 place-self-center text-center sm:text-left justify-self-center sm:justify-self-start transform-gpu"
           >
             <h1
               className={`${barlow.className} text-4xl sm:text-5xl lg:text-8xl text-center md:text-left m-auto w-auto md:w-1/3 min-w-fit min-h-[9rem]`}
@@ -74,7 +74,7 @@ export default function HeroSection({ children, image }: HeroSectionProps) {
               />
             </h1>
             <Button asChild className="mt-8 rounded-[1rem]">
-              <Link href="#contact">Let&apos;s Connect</Link>
+              <Link href="/contact">Let&apos;s Connect</Link>
             </Button>
           </motion.div>
 
@@ -83,7 +83,7 @@ export default function HeroSection({ children, image }: HeroSectionProps) {
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.5 }}
-            className="col-span-4 place-self-center mt-4 lg:mt-0"
+            className="col-span-4 place-self-center mt-4 lg:mt-0 transform-gpu"
           >
             {image}
           </motion.div>
@@ -94,6 +94,7 @@ export default function HeroSection({ children, image }: HeroSectionProps) {
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.5 }}
+            className="transform-gpu"
           >
             {children}
           </motion.div>

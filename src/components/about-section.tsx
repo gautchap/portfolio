@@ -22,7 +22,7 @@ export default function AboutSection({ children }: AboutSectionProps) {
       initial="initial"
       animate={isInView ? "animate" : "initial"}
       transition={{ duration: 0.5 }}
-      className="h-[100dvh] pt-12 md:pt-44 container"
+      className="h-[100dvh] pt-12 md:pt-44 container transform-gpu"
       ref={reference}
     >
       {children}

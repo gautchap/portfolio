@@ -22,7 +22,7 @@ export default function ContactSection({ children }: ContactSectionProps) {
       animate={isInView ? "animate" : "initial"}
       transition={{ duration: 0.5 }}
       id="contact"
-      className="h-[100dvh] pt-12 md:pt-44 container flex gap-4 flex-wrap md:flex-nowrap justify-center items-baseline"
+      className="pt-2 md:pt-44 container flex gap-4 flex-wrap md:flex-nowrap justify-center items-baseline transform-gpu"
       ref={reference}
     >
       {children}
