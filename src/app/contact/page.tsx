@@ -1,3 +1,4 @@
+import ContactSection from "@/components/contact-section";
 import {
   Card,
   CardContent,
@@ -7,9 +8,9 @@ import {
 } from "@/components/ui/card";
 import { ContactForm } from "@/components/contact-form";
 
-export default function ContactContent() {
+export default function Page() {
   return (
-    <>
+    <ContactSection>
       <Card className="md:max-w-[20rem]">
         <CardHeader>
           <CardTitle>&gt;_ Let&apos;s Connect</CardTitle>
@@ -25,6 +26,6 @@ export default function ContactContent() {
           <ContactForm />
         </CardContent>
       </Card>
-    </>
+    </ContactSection>
   );
 }

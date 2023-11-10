@@ -1,6 +1,8 @@
-export default function ProjectsContent() {
+import ProjectsSection from "@/components/projects-section";
+
+export default function Page() {
   return (
-    <>
+    <ProjectsSection>
       <h2 className="font-bold text-3xl leading-none tracking-tight">
         Projects
       </h2>
@@ -20,6 +22,6 @@ export default function ProjectsContent() {
         <li>Next.js</li>
         <li>React</li>
       </ul>
-    </>
+    </ProjectsSection>
   );
 }
