@@ -31,20 +31,17 @@ export function SideNav() {
           <SheetHeader className="text-left">
             <SheetTitle>
               <SheetClose asChild>
-                <Link href="#gaut">&lt;ggaut.dev&gt;</Link>
+                <Link href="/">&lt;ggaut.dev&gt;</Link>
               </SheetClose>
             </SheetTitle>
             <hr />
           </SheetHeader>
           <div className="flex flex-col gap-2 pt-2">
             <SheetClose asChild>
-              <Link href="#about">&lt;/about&gt;</Link>
+              <Link href="/projects">&lt;/projects&gt;</Link>
             </SheetClose>
             <SheetClose asChild>
-              <Link href="#projects">&lt;/projects&gt;</Link>
-            </SheetClose>
-            <SheetClose asChild>
-              <Link href="#contact">&lt;/contact&gt;</Link>
+              <Link href="/contact">&lt;/contact&gt;</Link>
             </SheetClose>
           </div>
         </SheetContent>
