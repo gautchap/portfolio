@@ -10,7 +10,6 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { Project } from "@/data/projects";
 import Image from "next/image";
-import ProjectImg from "@/components/project-img";
 
 type ProjectCardProps = {
   project: Project;
@@ -23,24 +22,24 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       target="_blank"
       className="inline-flex relative w-[320px] h-[280px]"
     >
-      <ProjectImg>
+      <div className="opacity-1 hover:opacity-20 transition-opacity duration-300">
         <Image
           priority
-          width={1280}
-          height={720}
+          width={640}
+          height={360}
           alt={project.name}
           className="block dark:hidden w-[320px] min-h-[280px] h-auto absolute rounded-xl"
           src={project.img.light}
         />
         <Image
           priority
-          width={1280}
-          height={720}
+          width={640}
+          height={360}
           alt={project.name}
           className="hidden dark:block w-[320px] min-h-[280px] h-auto absolute rounded-xl"
           src={project.img.dark}
         />
-      </ProjectImg>
+      </div>
       <Card className="h-full w-full bg-black text-white">
         <CardHeader>
           <CardTitle>&gt;_ {project.name}</CardTitle>
