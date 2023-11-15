@@ -16,7 +16,11 @@ export function SideNav() {
     <div className="flex w-full items-center justify-between md:hidden">
       <Sheet>
         <SheetTrigger asChild>
-          <button className="h-5 w-5">
+          <button
+            className="h-5 w-5"
+            title="burger menu"
+            aria-label="burger menu"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"
@@ -47,14 +51,19 @@ export function SideNav() {
         </SheetContent>
       </Sheet>
       <div>
-        <Button variant="ghost" size="icon">
-          <Link target="_blank" href="https://github.com/gautchap">
+        <Button variant="ghost" size="icon" title="github">
+          <Link
+            target="_blank"
+            aria-label="github"
+            href="https://github.com/gautchap"
+          >
             <Icons.gitHub className="h-[1.2rem] w-[1.2rem]" />
           </Link>
         </Button>
-        <Button variant="ghost" size="icon">
+        <Button variant="ghost" size="icon" title="linkedin">
           <Link
             target="_blank"
+            aria-label="linkedin"
             href="https://www.linkedin.com/in/gauthier-chapon"
           >
             <Icons.linkedin className="h-[1.2rem] w-[1.2rem]" />

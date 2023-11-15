@@ -42,28 +42,27 @@ export function MainNav() {
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
-          <div className="flex pl-5">
-            <NavigationMenuItem>
-              <Button variant="ghost" size="icon">
-                <Link target="_blank" href="https://github.com/gautchap">
-                  <Icons.gitHub className="h-[1.2rem] w-[1.2rem]" />
-                </Link>
-              </Button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Button variant="ghost" size="icon">
-                <Link
-                  target="_blank"
-                  href="https://linkedin.com/in/gauthier-chapon"
-                >
-                  <Icons.linkedin className="h-[1.2rem] w-[1.2rem]" />
-                </Link>
-              </Button>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <ThemeToggle />
-            </NavigationMenuItem>
-          </div>
+          <NavigationMenuItem className="flex pl-5">
+            <Button variant="ghost" size="icon" title="github">
+              <Link
+                target="_blank"
+                aria-label="github"
+                href="https://github.com/gautchap"
+              >
+                <Icons.gitHub className="h-[1.2rem] w-[1.2rem]" />
+              </Link>
+            </Button>
+            <Button variant="ghost" size="icon" title="linkedin">
+              <Link
+                target="_blank"
+                aria-label="linkedin"
+                href="https://linkedin.com/in/gauthier-chapon"
+              >
+                <Icons.linkedin className="h-[1.2rem] w-[1.2rem]" />
+              </Link>
+            </Button>
+            <ThemeToggle />
+          </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
     </div>
