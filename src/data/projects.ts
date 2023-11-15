@@ -23,7 +23,7 @@ export const projects = [
     name: "Résbosèques",
     url: "https://www.resobseques.fr",
     description:
-      "I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+      "Development of a SaaS for B2B networking in the funeral industry, setting up a pre-production environment, improving performance, refactoring, compliance with best practices.",
     badges: ["React", "NextJS 12", "Bootstrap", "Sass"],
     img: { light: resobseques, dark: resobseques },
   },
@@ -31,7 +31,7 @@ export const projects = [
     name: "E-com",
     url: "https://ecom-rsc.vercel.app",
     description:
-      "I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+      "Development of an e-commerce template for the end-of-course project, using react server components and server actions, authentication with google and magic link.",
     badges: ["TypeScript", "React", "PostgreSQL", "NextJS 13", "Tailwind"],
     img: { light: ecomLight, dark: ecomDark },
   },
@@ -39,7 +39,7 @@ export const projects = [
     name: "Tunetracer",
     url: "https://tunetracer.vercel.app",
     description:
-      "I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+      "Development of an application to track your favorite artists and music of the moment or all time on Spotify, with playlist creation and authentication with Spotify.",
     badges: ["TypeScript", "React", "NextJS 12", "Spotify API", "Tailwind"],
     img: { light: tunetracerLight, dark: tunetracerDark },
   },
@@ -47,7 +47,7 @@ export const projects = [
     name: "Shrtlnk",
     url: "https://shrtlnk-magic.vercel.app",
     description:
-      "I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+      "Development of an application to shorten urls and generate a qr code for instant access.",
     badges: ["TypeScript", "React", "MongoDB", "Vite SSR", "Tailwind"],
     img: { light: shrtlnk, dark: shrtlnk },
   },
