@@ -22,7 +22,7 @@ export default function AboutSection({ children }: AboutSectionProps) {
       initial="initial"
       animate={isInView ? "animate" : "initial"}
       transition={{ duration: 0.5 }}
-      className="min-h-screen pt-12 md:pt-32 container flex justify-around flex-wrap gap-4 md:gap-0 transform-gpu"
+      className="md:min-h-screen pt-12 md:pt-32 container flex flex-wrap md:justify-around transform-gpu"
       ref={reference}
     >
       {children}

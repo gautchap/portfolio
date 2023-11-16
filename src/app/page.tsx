@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Stars className="absolute z-[-1] h-full w-full transform-gpu" />
-      <main className="pb-16 md:pb-0">
+      <main className="pb-28 md:pb-0">
         <HeroSection image={<HeroImage />}>
           <HeroContent />
         </HeroSection>

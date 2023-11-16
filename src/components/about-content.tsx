@@ -10,7 +10,7 @@ export default function AboutContent() {
   const [tab, setTab] = useState(skills[0].category.toLowerCase());
 
   return (
-    <div className="flex flex-col md:flex-row items-start flex-wrap w-[30rem] h-[22rem]">
+    <div className="flex flex-col md:flex-row items-start flex-wrap w-[30rem] h-80">
       <div className="mx-auto md:mx-0">
         <ul className="flex md:flex-col space-y-5 items-baseline space-x-3">
           {skills.map((skill) => (
