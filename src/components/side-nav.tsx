@@ -42,9 +42,6 @@ export function SideNav() {
           </SheetHeader>
           <div className="flex flex-col gap-2 pt-2">
             <SheetClose asChild>
-              <Link href="/projects">&lt;/projects&gt;</Link>
-            </SheetClose>
-            <SheetClose asChild>
               <Link href="/contact">&lt;/contact&gt;</Link>
             </SheetClose>
           </div>

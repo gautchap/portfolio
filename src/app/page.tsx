@@ -4,6 +4,9 @@ import HeroSection from "@/components/hero-section";
 import HeroImage from "@/components/hero-image";
 import HeroContent from "@/components/hero-content";
 import AboutContent from "@/components/about-content";
+import ProjectsSection from "@/components/projects-section";
+import { projects } from "@/data/projects";
+import ProjectCard from "@/components/project-card";
 
 export default function Home() {
   return (
@@ -25,6 +28,16 @@ export default function Home() {
             </p>
           </div>
         </AboutSection>
+        <ProjectsSection>
+          <h1 className="font-bold text-3xl leading-none tracking-tight mb-8">
+            Projects
+          </h1>
+          <div className="flex flex-wrap gap-3 justify-center">
+            {projects.map((project) => (
+              <ProjectCard key={project.name} project={project} />
+            ))}
+          </div>
+        </ProjectsSection>
       </main>
     </>
   );
