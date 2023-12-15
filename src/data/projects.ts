@@ -23,12 +23,12 @@ export const projects = [
     name: "Résbosèques",
     url: "https://www.resobseques.fr",
     description:
-      "Development of a SaaS for B2B networking in the funeral industry, setting up a pre-production environment, improving performance, refactoring, compliance with best practices.",
+      "Development with atomic design under Next for a B2B application in the funeral funerary sector, SaaS, implementation of a search tool (crematoriums, funeral homes, etc.) on a national scale over 40,000 players in the sector",
     badges: ["React", "NextJS 12", "Bootstrap", "Sass"],
     img: { light: resobseques, dark: resobseques },
   },
   {
-    name: "E-com",
+    name: "E-commerce",
     url: "https://ecom-rsc.vercel.app",
     description:
       "Development of an e-commerce template for the end-of-course project, using react server components and server actions, authentication with google and magic link.",
