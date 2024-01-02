@@ -24,15 +24,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     >
       <div className="opacity-1 hover:opacity-20 transition-opacity duration-300 bg-gradient-to-b from-55% from-transparent to-background">
         <Image
-          priority
           alt={project.name}
-          className="z-[-1] relative block dark:hidden md:z-10 md:absolute rounded-b-none md:rounded-b-xl rounded-xl aspect-video hover:blur-sm transition duration-300 transform-gpu"
+          className="z-[-1] relative block dark:hidden md:z-0 md:absolute rounded-b-none md:rounded-b-xl rounded-xl aspect-video hover:blur-sm transition duration-300 transform-gpu"
           src={project.img.light}
         />
         <Image
-          priority
           alt={project.name}
-          className="z-[-1] relative hidden dark:block md:z-10 md:absolute rounded-b-none md:rounded-b-xl rounded-xl aspect-video hover:blur-sm transition duration-300 transform-gpu"
+          className="z-[-1] relative hidden dark:block md:z-0 md:absolute rounded-b-none md:rounded-b-xl rounded-xl aspect-video hover:blur-sm transition duration-300 transform-gpu"
           src={project.img.dark}
         />
       </div>
