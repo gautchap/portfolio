@@ -231,10 +231,11 @@ export const Icons: IconsType = {
         <Image
             quality={100}
             src={styled}
-            width={200}
-            height={200}
+            width={80}
+            height={80}
             alt="styled-components"
             draggable={false}
+            priority
             {...props}
         />
     ),
