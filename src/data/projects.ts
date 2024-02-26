@@ -1,7 +1,7 @@
 import ecomLight from "@/assets/ecom-light.webp";
 import ecomDark from "@/assets/ecom-dark.webp";
 import resobseques from "@/assets/resobseques.webp";
-import shrtlnk from "@/assets/shrtlnk.webp";
+import authNest from "@/assets/auth-nest.webp";
 import tunetracerLight from "@/assets/tunetracer-light.webp";
 import tunetracerDark from "@/assets/tunetracer-dark.webp";
 
@@ -32,7 +32,7 @@ export const projects = [
         url: "https://ecom-rsc.vercel.app",
         description:
             "Development of an e-commerce template for the end-of-course project, using react server components and server actions, authentication with google and magic link.",
-        badges: ["TypeScript", "React", "PostgreSQL", "NextJS 13", "Tailwind"],
+        badges: ["TypeScript", "React", "PostgreSQL", "NextJS 14", "Tailwind"],
         img: { light: ecomLight, dark: ecomDark },
     },
     {
@@ -44,10 +44,11 @@ export const projects = [
         img: { light: tunetracerLight, dark: tunetracerDark },
     },
     {
-        name: "Shrtlnk",
-        url: "https://shrtlnk-magic.vercel.app",
-        description: "Development of an application to shorten urls and generate a qr code for instant access.",
-        badges: ["TypeScript", "React", "MongoDB", "Vite SSR", "Tailwind"],
-        img: { light: shrtlnk, dark: shrtlnk },
+        name: "NestJS Auth",
+        url: "https://github.com/gautchap/auth-nest",
+        description:
+            "A simple authentication API with NestJS and Fastify, using JWT, Passport and nodemailer for email confirmation.",
+        badges: ["TypeScript", "NestJS", "Prisma", "PostgreSQL"],
+        img: { light: authNest, dark: authNest },
     },
 ];
