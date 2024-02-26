@@ -18,7 +18,7 @@ export default function ContactSection({ children }: ContactSectionProps) {
       animate={isInView ? "animate" : "initial"}
       transition={{ duration: 0.5 }}
       id="contact"
-      className="pt-2 md:pt-44 container transform-gpu"
+      className="container transform-gpu pt-2 md:pt-44"
       ref={reference}
     >
       {children}

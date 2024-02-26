@@ -34,18 +34,18 @@ export default function HeroSection({ children, image }: HeroSectionProps) {
   const reference = useRef(null);
   const isInView = useInView(reference, { once: false });
   return (
-    <section id="gaut" className="h-[100dvh] flex" ref={reference}>
-      <div className="grid container mt-4 md:mt-16">
+    <section id="gaut" className="flex h-[100dvh]" ref={reference}>
+      <div className="container mt-4 grid md:mt-16">
         <div className="grid grid-cols-1 sm:grid-cols-12">
           <motion.div
             variants={heroVariants}
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.5 }}
-            className="col-span-8 place-self-center text-center sm:text-left justify-self-center sm:justify-self-start transform-gpu"
+            className="col-span-8 transform-gpu place-self-center justify-self-center text-center sm:justify-self-start sm:text-left"
           >
             <h1
-              className={`${barlow.className} text-4xl sm:text-5xl lg:text-8xl text-center md:text-left m-auto w-auto md:w-1/3 min-w-fit min-h-[9rem]`}
+              className={`${barlow.className} m-auto min-h-[9rem] w-auto min-w-fit text-center text-4xl sm:text-5xl md:w-1/3 md:text-left lg:text-8xl`}
             >
               Hello, I&apos;m
               <br />
@@ -83,12 +83,12 @@ export default function HeroSection({ children, image }: HeroSectionProps) {
             initial="initial"
             animate={isInView ? "animate" : "initial"}
             transition={{ duration: 0.5 }}
-            className="col-span-4 place-self-center mt-4 lg:mt-0 transform-gpu"
+            className="col-span-4 mt-4 transform-gpu place-self-center lg:mt-0"
           >
             {image}
           </motion.div>
         </div>
-        <div className="md:place-self-center md:px-16 grid-cols-1">
+        <div className="grid-cols-1 md:place-self-center md:px-16">
           <motion.div
             variants={cardVariants}
             initial="initial"

@@ -26,12 +26,12 @@ export function MainNav() {
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
-            <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-2">
-                <span className="relative flex h-3 w-3">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+            <div className="absolute left-1/2 flex -translate-x-1/2 items-center gap-2">
+                <span className="relative flex size-3">
+                    <span className="absolute inline-flex size-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+                    <span className="relative inline-flex size-3 rounded-full bg-green-500"></span>
                 </span>
-                <p className="text-green-400 text-xs">Available for new opportunities</p>
+                <p className="text-xs text-green-400">Available for new opportunities</p>
             </div>
             <NavigationMenu>
                 <NavigationMenuList>
@@ -45,12 +45,12 @@ export function MainNav() {
                     <NavigationMenuItem className="flex pl-5">
                         <Button variant="ghost" size="icon" title="github">
                             <Link target="_blank" aria-label="github" href="https://github.com/gautchap">
-                                <Icons.gitHub className="h-[1.2rem] w-[1.2rem]" />
+                                <Icons.gitHub className="size-[1.2rem]" />
                             </Link>
                         </Button>
                         <Button variant="ghost" size="icon" title="linkedin">
                             <Link target="_blank" aria-label="linkedin" href="https://linkedin.com/in/gauthier-chapon">
-                                <Icons.linkedin className="h-[1.2rem] w-[1.2rem]" />
+                                <Icons.linkedin className="size-[1.2rem]" />
                             </Link>
                         </Button>
                         <ThemeToggle />

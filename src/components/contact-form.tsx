@@ -109,7 +109,7 @@ export function ContactForm() {
         />
         {form.formState.isSubmitting ? (
           <Button disabled>
-            <ReloadIcon className="mr-2 h-4 w-4 animate-spin" />
+            <ReloadIcon className="mr-2 size-4 animate-spin" />
             Sending...
           </Button>
         ) : (

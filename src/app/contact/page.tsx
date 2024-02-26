@@ -11,10 +11,10 @@ import { ContactForm } from "@/components/contact-form";
 export default function Page() {
   return (
     <ContactSection>
-      <h1 className="font-bold text-3xl leading-none tracking-tight mb-4 md:mb-8">
+      <h1 className="mb-4 text-3xl font-bold leading-none tracking-tight md:mb-8">
         Contact
       </h1>
-      <div className="flex gap-3 flex-wrap md:flex-nowrap justify-between items-baseline">
+      <div className="flex flex-wrap items-baseline justify-between gap-3 md:flex-nowrap">
         <Card className="md:max-w-[20rem]">
           <CardHeader>
             <CardTitle>&gt;_ Let&apos;s Connect</CardTitle>
@@ -25,7 +25,7 @@ export default function Page() {
             </CardDescription>
           </CardHeader>
         </Card>
-        <Card className="w-full md:max-w-[55rem] shadow-md">
+        <Card className="w-full shadow-md md:max-w-[55rem]">
           <CardContent className="p-5">
             <ContactForm />
           </CardContent>

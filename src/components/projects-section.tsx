@@ -22,7 +22,7 @@ export default function ProjectsSection({ children }: ProjectsSectionProps) {
       initial="initial"
       animate={isInView ? "animate" : "initial"}
       transition={{ duration: 0.5 }}
-      className="pb-12 md:pb-32 container transform-gpu"
+      className="container transform-gpu pb-12 md:pb-32"
       ref={reference}
     >
       {children}

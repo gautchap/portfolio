@@ -11,15 +11,15 @@ import ProjectCard from "@/components/project-card";
 export default function Home() {
     return (
         <>
-            <Stars className="absolute z-[-1] h-full w-full transform-gpu" />
+            <Stars className="absolute z-[-1] size-full transform-gpu" />
             <main className="pb-28 md:pb-0">
                 <HeroSection image={<HeroImage />}>
                     <HeroContent />
                 </HeroSection>
 
                 <ProjectsSection>
-                    <h1 className="font-bold text-3xl leading-none tracking-tight mb-8">Projects</h1>
-                    <div className="flex flex-wrap gap-3 justify-center">
+                    <h1 className="mb-8 text-3xl font-bold leading-none tracking-tight">Projects</h1>
+                    <div className="flex flex-wrap justify-center gap-3">
                         {projects.map((project) => (
                             <ProjectCard key={project.name} project={project} />
                         ))}

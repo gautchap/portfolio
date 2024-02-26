@@ -20,23 +20,23 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     <Link
       href={project.url}
       target="_blank"
-      className="inline-flex relative h-[30em] md:h-auto max-w-[320px] md:max-w-md aspect-video flex-wrap my-4 md:m-0 border rounded-xl md:border-none"
+      className="relative my-4 inline-flex aspect-video h-[30em] max-w-[320px] flex-wrap rounded-xl border md:m-0 md:h-auto md:max-w-md md:border-none"
     >
-      <div className="opacity-1 hover:opacity-20 transition-opacity duration-300 bg-gradient-to-b from-55% from-transparent to-background">
+      <div className="opacity-1 bg-gradient-to-b from-transparent from-55% to-background transition-opacity duration-300 hover:opacity-20">
         <Image
           width={500}
           alt={project.name}
-          className="z-[-1] relative block dark:hidden md:z-0 md:absolute rounded-b-none md:rounded-b-xl rounded-xl aspect-video hover:blur-sm transition duration-300 transform-gpu"
+          className="relative z-[-1] block aspect-video transform-gpu rounded-xl rounded-b-none transition duration-300 hover:blur-sm dark:hidden md:absolute md:z-0 md:rounded-b-xl"
           src={project.img.light}
         />
         <Image
           width={500}
           alt={project.name}
-          className="z-[-1] relative hidden dark:block md:z-0 md:absolute rounded-b-none md:rounded-b-xl rounded-xl aspect-video hover:blur-sm transition duration-300 transform-gpu"
+          className="relative z-[-1] hidden aspect-video transform-gpu rounded-xl rounded-b-none transition duration-300 hover:blur-sm dark:block md:absolute md:z-0 md:rounded-b-xl"
           src={project.img.dark}
         />
       </div>
-      <Card className="md:bg-black md:text-white border-none md:h-full">
+      <Card className="border-none md:h-full md:bg-black md:text-white">
         <CardHeader>
           <CardTitle>&gt;_ {project.name}</CardTitle>
         </CardHeader>
